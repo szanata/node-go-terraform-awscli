@@ -2,12 +2,14 @@ FROM node:8.10-alpine
 
 RUN apk add --update 
 
+# Basic tools
 RUN apk add \
   git \
   openssh \
   make \
   musl-dev \
-  openssl
+  openssl \
+  bash
 
 # Python installation
 RUN apk add \
@@ -37,6 +39,9 @@ RUN go get -u github.com/Masterminds/glide/...
 WORKDIR $GOPATH
 
 CMD ["make"]
+
+# Parallel
+RUN apk add parallel
 
 # Leaving the bin/bash cmd as output
 CMD ["/bin/bash"]
