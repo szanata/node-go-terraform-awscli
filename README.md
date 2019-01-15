@@ -1,7 +1,7 @@
 
 # node-go-terraform-cli
 
-Docker image with a stack to develop with AWS lambdas
+Alpine linux with a stack to develop with AWS lambdas (node & go together)
 
 - go 1.x
 - node (see version)
