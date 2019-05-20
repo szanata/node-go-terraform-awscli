@@ -1,4 +1,3 @@
-
 # node-go-terraform-cli
 
 Docker image with a stack to develop with AWS lambdas
