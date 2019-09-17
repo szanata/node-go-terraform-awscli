@@ -5,7 +5,7 @@ Alpine linux with a stack to develop with AWS lambdas (node & go together)
 - go 1.x
 - node (see version)
 - aws cli
-- Terraform
+- Terraform (11.14)
 - github
 - bash
 - GNU parallel

@@ -1,4 +1,4 @@
-FROM node:10.15.3-alpine
+FROM node:10.16-alpine
 
 RUN apk add --update 
 
@@ -22,7 +22,7 @@ RUN apk add \
 RUN pip install --upgrade awscli
 
 # Terraform
-RUN wget https://releases.hashicorp.com/terraform/0.11.11/terraform_0.11.11_linux_amd64.zip -O /tmp/terraform.zip && \
+RUN wget https://releases.hashicorp.com/terraform/0.11.14/terraform_0.11.14_linux_amd64.zip -O /tmp/terraform.zip && \
   unzip -d /usr/local/bin/ /tmp/terraform.zip
 
 # Go installation
